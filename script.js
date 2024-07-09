@@ -49,4 +49,22 @@ let negado = !booleano;
 console.log(negado); // IMPRIME "false"
 
 console.log('Ejemplo para datos tipo OBJECT')
+let objeto = {
+    nombre: 'Juan',
+    edad: 30,
+    profesion: 'Ingeniero'
+};
+
+// 1. Obtener las claves (propiedades) del objeto
+let claves = Object.keys(objeto);
+console.log(claves); // IMPRIME ["nombre", "edad", "profesion"]
+
+// 2. Obtener los valores del objeto
+let valores = Object.values(objeto);
+console.log(valores); // IMPRIME ["Juan", 30, "Ingeniero"]
+
+// 3. Convertir el objeto a una cadena JSON
+let jsonString = JSON.stringify(objeto);
+console.log(jsonString); // IMPRIME '{"nombre":"Juan","edad":30,"profesion":"Ingeniero"}'
+
 console.log('Ejemplo para datos tipo ARRAY')
