@@ -34,5 +34,19 @@ console.log(enHexadecimal); // IMPRIME "4e"
 
 
 console.log('Ejemplo para datos tipo BOOL')
+let booleano = true;
+
+// 1. Convertir el valor booleano a una cadena
+let comoCadena = booleano.toString();
+console.log(comoCadena); // IMPRIME "true"
+
+// 2. Utilizar el valor booleano en una condición ternaria para decidir el valor de otra variable
+let mensaje = booleano ? 'El valor es verdadero' : 'El valor es falso';
+console.log(mensaje); // IMPRIME "El valor es verdadero"
+
+// 3. Negar el valor booleano
+let negado = !booleano;
+console.log(negado); // IMPRIME "false"
+
 console.log('Ejemplo para datos tipo OBJECT')
 console.log('Ejemplo para datos tipo ARRAY')
