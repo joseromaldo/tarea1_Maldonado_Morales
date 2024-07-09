@@ -5,21 +5,34 @@ let cadena = 'Este es un ejemplo para el tipo de dato string'
 
 // 1. Convertir toda la cadena a mayúsculas usando toUpperCase()
 let mayusculas = cadena.toUpperCase();
-console.log(mayusculas); // "ESTE ES UN EJEMPLO PARA EL TIPO DE DATO STRING"
+console.log(mayusculas); // IMPRIME "ESTE ES UN EJEMPLO PARA EL TIPO DE DATO STRING"
 
 // 2. Reemplazar la palabra "string" por "cadena" usando replace()
-let reemplazada = cadena.replace('string', 'cadena');
-console.log(reemplazada); // "Este es un ejemplo para el tipo de dato cadena"
+let reemplazar = cadena.replace('string', 'cadena');
+console.log(reemplazar); // IMPRIME "Este es un ejemplo para el tipo de dato cadena"
 
 // 3. Dividir la cadena en un array de palabras usando split()
 let palabras = cadena.split(' ');
-console.log(palabras); // ["Este", "es", "un", "ejemplo", "para", "el", "tipo", "de", "dato", "string"]
-
-
-
+console.log(palabras); // IMPRIME ["Este", "es", "un", "ejemplo", "para", "el", "tipo", "de", "dato", "string"]
 
 
 console.log('Ejemplo para datos tipo NUMBER')
+let numero = 78
+
+
+// 1. Convertir el número a un número decimal con dos decimales
+let conDosDecimales = numero.toFixed(2);
+console.log(conDosDecimales); // IMPRIME "78.00"
+
+// 2. Convertir el número a notación exponencial
+let notacionExponencial = numero.toExponential();
+console.log(notacionExponencial); // IMPRIME "7.8e+1"
+
+// 3. Convertir el número a base 16 (hexadecimal)
+let enHexadecimal = numero.toString(16);
+console.log(enHexadecimal); // IMPRIME "4e"
+
+
 console.log('Ejemplo para datos tipo BOOL')
 console.log('Ejemplo para datos tipo OBJECT')
 console.log('Ejemplo para datos tipo ARRAY')
