@@ -68,3 +68,16 @@ let jsonString = JSON.stringify(objeto);
 console.log(jsonString); // IMPRIME '{"nombre":"Juan","edad":30,"profesion":"Ingeniero"}'
 
 console.log('Ejemplo para datos tipo ARRAY')
+let array = [1, 2, 3, 4, 5];
+
+// 1. Método find: Devuelve el primer elemento del array que cumple con la condición especificada
+let elementoEncontrado = array.find(num => num > 2);
+console.log(elementoEncontrado); // IMPRIME 3
+
+// 2. Método map: Crea un nuevo array con los resultados de aplicar una función a cada elemento del array original
+let arrayMultiplicado = array.map(num => num * 2);
+console.log(arrayMultiplicado); // IMPRIME [2, 4, 6, 8, 10]
+
+// 3. Método filter: Crea un nuevo array con todos los elementos que cumplan una condición
+let arrayFiltrado = array.filter(num => num > 3);
+console.log(arrayFiltrado); // IMPRIME [4, 5, 6]
